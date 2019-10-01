@@ -75,7 +75,7 @@ and a .java file is instanly created, for activity or fragment with all the fiel
 <!-- etc. -->
 ```
 
-`~$ java 'jar xml2java.jar newlayout.xml`
+`~$ java -jar xml2java.jar newlayout.xml`
 
 
 ```java
