@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vppets"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        >
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/vpindicator"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/colorPrimary"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textAllCaps="true"
+                android:textColor="@color/lightGrayBkg"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/contact_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/mdtp_white"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/contact_citypostcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/mdtp_white"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home Phone"
+                        android:textAllCaps="true"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/contact_homephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/mdtp_white"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/contact_homephone_call"
+                    android:src="@drawable/phone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Work Phone"
+                        android:textAllCaps="true"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/contact_workphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/mdtp_white"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/contact_workphone_call"
+                    android:src="@drawable/phone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cell Phone Call"
+                        android:textAllCaps="true"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/contact_cellphonecall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/mdtp_white"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/contact_cellphone_call"
+                    android:src="@drawable/phone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cell Phone SMS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/contact_cellphonesms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/mdtp_white"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
+
+                <!--
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/contact_cellphonesms_sms"
+                    android:src="@drawable/sms" />
+                    -->
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAllCaps="true"
+                android:textColor="@color/mdtp_white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/mdtp_white"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
