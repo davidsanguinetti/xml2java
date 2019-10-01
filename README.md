@@ -12,7 +12,7 @@ Just run
 and a .java file is instanly created, for activity or fragment with all the fields of the layou, ready to be used.
 
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
@@ -75,7 +75,10 @@ and a .java file is instanly created, for activity or fragment with all the fiel
 <!-- etc. -->
 ```
 
-```
+`~/$ java 'jar xml2java.jar newlayout.xml`
+
+
+```java
 package
 public class ClientdetailInformationFragment extends Fragment {
 	androidx.viewpager.widget.ViewPager vpVppets;
